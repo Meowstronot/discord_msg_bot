@@ -3,15 +3,13 @@
 **Discord Multiple accounts and many messages bot**, tools buat auto kirim pesan ke channel discord make banyak akun dan banyak pesan (flexibel) secara pararel, kalo ada yang gagal gk ganggu akun lain. *cocok buat push level discord* 👍
 
 # Features
-untuk sekarang masih ada banyak mode, more feature are planned!! 
+Silahkan baca setiap perintah secara teliti saat running bot!!
 
 1. **Mode Basic** <br>
     Auto kirim pesan dari awal hingga akhir make banyak akun (opsional)
 2. **Mode Timer** <br>
     Auto kirim pesan dari awal hingga akhir dan balik lagi ke awal selama waktu timer belum tercapai. jika waktu timer sudah tercapai maka akan stop pada urutan pesan apapun!
 3.   (coming soon!!)
-
-Silahkan baca perintah secara teliti saat running bot!!
 
 # Installation
  * Python version 3.12 or later 
