@@ -73,7 +73,7 @@ def print_banner():
         ██████╔╝██║███████║╚██████╗╚██████╔╝██║  ██║██████╔╝    ██████╔╝╚██████╔╝   ██║   
         ╚═════╝ ╚═╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝     ╚═════╝  ╚═════╝    ╚═╝   
 """
-    console.print(Panel(banner, title="[bold yellow]Multiple Account Send Messages[/bold yellow]",
+    console.print(Panel(banner, title="[bold yellow]Multiple Accounts Sending Messages[/bold yellow]",
                         title_align="center",
                         subtitle="By Meowstronot (Khisan)", subtitle_align="center", 
                         border_style="cyan", width=100, style="rgb(0,200,0)"))
