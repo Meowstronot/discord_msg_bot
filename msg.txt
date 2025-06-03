@@ -1,1 +1,2 @@
-gzip
+your_msg_1
+your_msg_2
