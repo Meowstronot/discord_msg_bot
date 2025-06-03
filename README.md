@@ -1,6 +1,6 @@
 # Discord Multi-Account Message Bot
 
-**Discord Multiple accounts and many messages bot**, tools buat auto kirim pesan ke channel discord make banyak akun dan banyak pesan (flexibel). *cocok buat push level discord* 👍
+**Discord Multiple accounts and many messages bot**, tools buat auto kirim pesan ke channel discord make banyak akun dan banyak pesan (flexibel) secara pararel, kalo ada yang gagal gk ganggu akun lain. *cocok buat push level discord* 👍
 
 # Features
 untuk sekarang masih ada banyak mode, more feature are planned!! 
@@ -10,6 +10,8 @@ untuk sekarang masih ada banyak mode, more feature are planned!!
 2. **Mode Timer** <br>
     Auto kirim pesan dari awal hingga akhir dan balik lagi ke awal selama waktu timer belum tercapai. jika waktu timer sudah tercapai maka akan stop pada urutan pesan apapun!
 3.   (coming soon!!)
+
+Silahkan baca perintah secara teliti saat running bot!!
 
 # Installation
  * Python version 3.12 or later 
@@ -30,7 +32,8 @@ untuk sekarang masih ada banyak mode, more feature are planned!!
     your_dc_token_1
     your_dc_token_2
     ```
-**HOW TO GET DISCORD TOKEN?** <br>
+
+# HOW TO GET DISCORD TOKEN?
 1. Login Discord di browser
 2. Goto Developer Tools Page di browser (CTRL + SHIFT + i)
 3. Pergi ke Network
