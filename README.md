@@ -30,7 +30,7 @@ Silahkan baca setiap perintah secara teliti saat running bot!!
     your_dc_token_1
     your_dc_token_2
     ```
-* After that  silahkan eksekusi bot 
+* After that  silahkan eksekusi bot make command
      ```bash
     python main.py
     ```
