@@ -30,7 +30,10 @@ Silahkan baca setiap perintah secara teliti saat running bot!!
     your_dc_token_1
     your_dc_token_2
     ```
-
+* After that  silahkan eksekusi bot 
+     ```bash
+    python main.py
+    ```
 # HOW TO GET DISCORD TOKEN?
 1. Login Discord di browser
 2. Goto Developer Tools Page di browser (CTRL + SHIFT + i)
