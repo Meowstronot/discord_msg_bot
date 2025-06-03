@@ -34,6 +34,9 @@ Silahkan baca setiap perintah secara teliti saat running bot!!
      ```bash
     python main.py
     ```
+* Silahkan isi Channel ID saat running <br>
+How to get Channel ID? tonton [yutub ini](https://www.youtube.com/watch?v=YjiQ7CajAgg)
+
 # HOW TO GET DISCORD TOKEN?
 1. Login Discord di browser
 2. Goto Developer Tools Page di browser (CTRL + SHIFT + i)
