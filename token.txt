@@ -1,2 +1,2 @@
-your_dc_token_1
-your_dc_token_2
+your_token1
+your_token2

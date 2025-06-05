@@ -165,7 +165,10 @@ class discord_bot:
 
             i = 0
             while True:
-                if time.time() - start_time > max_duration:
+                elapsed_time = time.time() - start_time  # Waktu yang sudah berlalu
+                remaining_time = max_duration - elapsed_time  # Sisa waktu
+
+                if remaining_time <= 0:
                     print(Fore.YELLOW + f"The execution time reaches {max_duration/60} minutes, the program stops." + Style.RESET_ALL)
                     break
                 
@@ -184,6 +187,13 @@ class discord_bot:
                         self.logger(header="Success", header_color=Fore.GREEN + Style.BRIGHT, message=f"[{username}] : {content}")
                     else:
                         self.logger(header="Failed", header_color=Fore.RED, message=f"[{token[:4]}***{token[-4:]}] Failed to send message {(i% len(msg_list))+1}")
+
+                # Displaying remaining time before delay
+                remaining_minutes = int(remaining_time // 60)  # Menit tersisa
+                remaining_seconds = int(remaining_time % 60)  # Detik tersisa
+                print("")
+                self.logger(header="Timer", header_color=Fore.LIGHTYELLOW_EX + Style.BRIGHT, 
+                            message=f"Timer left: {Fore.YELLOW}{remaining_minutes} minutes {remaining_seconds} seconds{Style.RESET_ALL}")
 
                 for delay in range(self.delay_msg, 0, -1):
                     print(Fore.LIGHTBLUE_EX + Style.BRIGHT + f"Delay: {delay}", end="            \r" + Style.RESET_ALL)
