@@ -152,8 +152,8 @@ class discord_bot:
                     else:
                         self.logger(header="Failed", header_color=Fore.RED, message=f"[{token[:4]}***{token[-4:]}] Failed to send message {i}")
 
-                for i in range(self.delay_msg, 0, -1):
-                    print(Fore.LIGHTBLUE_EX + Style.BRIGHT + f"Delay: {i}", end="            \r" + Style.RESET_ALL)
+                for delay in range(self.delay_msg, 0, -1):
+                    print(Fore.LIGHTBLUE_EX + Style.BRIGHT + f"Delay: {delay}", end="            \r" + Style.RESET_ALL)
                     print("", end="")
                     await asyncio.sleep(1)
                 print_banner()
@@ -170,7 +170,7 @@ class discord_bot:
                     break
                 
                 # looping index melingkar 
-                msg = msg_list[i % len(msg_list)]
+                # msg = msg_list[i % len(msg_list)] # tiap akun pesan sama
                 print(Fore.LIGHTBLUE_EX + Style.BRIGHT + f"\n{"="*10} Sending the Message ({(i% len(msg_list))+1}) {"="*10}" + Style.RESET_ALL)
 
                 # tasks = [self.send_msg(token, msg) for token in token_list] # tiap akun pesan sama
@@ -185,8 +185,8 @@ class discord_bot:
                     else:
                         self.logger(header="Failed", header_color=Fore.RED, message=f"[{token[:4]}***{token[-4:]}] Failed to send message {(i% len(msg_list))+1}")
 
-                for i in range(self.delay_msg, 0, -1):
-                    print(Fore.LIGHTBLUE_EX + Style.BRIGHT + f"Delay: {i}", end="            \r" + Style.RESET_ALL)
+                for delay in range(self.delay_msg, 0, -1):
+                    print(Fore.LIGHTBLUE_EX + Style.BRIGHT + f"Delay: {delay}", end="            \r" + Style.RESET_ALL)
                     print("", end="")
                     await asyncio.sleep(1)
                 i += 1
