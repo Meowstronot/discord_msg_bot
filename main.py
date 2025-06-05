@@ -102,7 +102,7 @@ class discord_bot:
             self.logger(header="Failed", header_color=Fore.RED, message=f"File not found: {file_path}")
             return []
     
-    async def send_msg(self, token:str=None, msg:str=None, attempt:int=2):
+    async def send_msg(self, token:str=None, msg:str=None, attempt:int=3):
 
         header = {"authorization" : token}
         payload = {"content" : msg}
@@ -152,7 +152,10 @@ class discord_bot:
                     else:
                         self.logger(header="Failed", header_color=Fore.RED, message=f"[{token[:4]}***{token[-4:]}] Failed to send message {i}")
 
-                await asyncio.sleep(self.delay_msg) 
+                for i in range(self.delay_msg, 0, -1):
+                    print(Fore.LIGHTBLUE_EX + Style.BRIGHT + f"Delay: {i}", end="            \r" + Style.RESET_ALL)
+                    print("", end="")
+                    await asyncio.sleep(1)
                 print_banner()
 
         elif mode == 2:
@@ -182,7 +185,10 @@ class discord_bot:
                     else:
                         self.logger(header="Failed", header_color=Fore.RED, message=f"[{token[:4]}***{token[-4:]}] Failed to send message {(i% len(msg_list))+1}")
 
-                await asyncio.sleep(self.delay_msg)
+                for i in range(self.delay_msg, 0, -1):
+                    print(Fore.LIGHTBLUE_EX + Style.BRIGHT + f"Delay: {i}", end="            \r" + Style.RESET_ALL)
+                    print("", end="")
+                    await asyncio.sleep(1)
                 i += 1
                 print_banner()
 
