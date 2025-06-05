@@ -8,7 +8,7 @@ Silahkan baca setiap perintah secara teliti saat running bot!!
 1. **Mode Basic** <br>
     Auto kirim pesan dari awal hingga akhir make banyak akun (opsional)
 2. **Mode Timer** <br>
-    Auto kirim pesan dari awal hingga akhir dan balik lagi ke awal selama waktu timer belum tercapai. jika waktu timer sudah tercapai maka akan stop pada urutan pesan apapun!
+    Auto mengirimkan pesan berbeda untuk setiap akun dari awal hingga akhir, kemudian mengulang, hingga waktu timer tercapai.
 3.   (coming soon!!)
 
 # Installation

@@ -121,7 +121,7 @@ class discord_bot:
                 self.logger(header="Failed", header_color=Fore.RED, message=f"[{token[:4]}***{token[-4:]}] Attempt {i+1}/{attempt} - Error: {e}")
             if i < attempt - 1:
                 await asyncio.sleep(random.randint(2, 5))  # Delay Retry antara 2-5 detik
-
+                
         return None
 
     async def main(self, mode:int):
@@ -169,7 +169,9 @@ class discord_bot:
                 # looping index melingkar 
                 msg = msg_list[i % len(msg_list)]
                 print(Fore.LIGHTBLUE_EX + Style.BRIGHT + f"\n{"="*10} Sending the Message ({(i% len(msg_list))+1}) {"="*10}" + Style.RESET_ALL)
-                tasks = [self.send_msg(token, msg) for token in token_list]
+
+                # tasks = [self.send_msg(token, msg) for token in token_list] # tiap akun pesan sama
+                tasks = [self.send_msg(token, msg_list[(i + idx) % len(msg_list)]) for idx, token in enumerate(token_list)] # tiap akun pesan beda
                 responses = await asyncio.gather(*tasks)
 
                 for token, response in zip(token_list, responses):
